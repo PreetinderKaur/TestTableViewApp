@@ -14,6 +14,12 @@
 		0E39AFD322491EF000D251A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E39AFD122491EF000D251A6 /* LaunchScreen.storyboard */; };
 		0E39AFDE22491EF000D251A6 /* TestTableViewAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E39AFDD22491EF000D251A6 /* TestTableViewAppTests.swift */; };
 		0E39AFE922491EF000D251A6 /* TestTableViewAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E39AFE822491EF000D251A6 /* TestTableViewAppUITests.swift */; };
+		0E39AFF72249231C00D251A6 /* list.json in Resources */ = {isa = PBXBuildFile; fileRef = 0E39AFF62249231B00D251A6 /* list.json */; };
+		0E39AFFA2249282700D251A6 /* TeamList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E39AFF92249282700D251A6 /* TeamList.swift */; };
+		0E39AFFC22493AC900D251A6 /* TeamsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E39AFFB22493AC900D251A6 /* TeamsCell.swift */; };
+		0E39AFFF2249450300D251A6 /* TeamsHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E39AFFE2249450300D251A6 /* TeamsHeaderView.xib */; };
+		0E39B0012249488700D251A6 /* TeamsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E39B0002249488700D251A6 /* TeamsHeaderView.swift */; };
+		0E39B00522495CCB00D251A6 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E39B00422495CCB00D251A6 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,12 @@
 		0E39AFE422491EF000D251A6 /* TestTableViewAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestTableViewAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E39AFE822491EF000D251A6 /* TestTableViewAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTableViewAppUITests.swift; sourceTree = "<group>"; };
 		0E39AFEA22491EF000D251A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E39AFF62249231B00D251A6 /* list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = list.json; sourceTree = "<group>"; };
+		0E39AFF92249282700D251A6 /* TeamList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamList.swift; sourceTree = "<group>"; };
+		0E39AFFB22493AC900D251A6 /* TeamsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsCell.swift; sourceTree = "<group>"; };
+		0E39AFFE2249450300D251A6 /* TeamsHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeamsHeaderView.xib; sourceTree = "<group>"; };
+		0E39B0002249488700D251A6 /* TeamsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsHeaderView.swift; sourceTree = "<group>"; };
+		0E39B00422495CCB00D251A6 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +86,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E308CF02249B99F0018993E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		0E39AFBC22491EEC00D251A6 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +100,7 @@
 				0E39AFDC22491EF000D251A6 /* TestTableViewAppTests */,
 				0E39AFE722491EF000D251A6 /* TestTableViewAppUITests */,
 				0E39AFC622491EED00D251A6 /* Products */,
+				0E308CF02249B99F0018993E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +117,10 @@
 		0E39AFC722491EED00D251A6 /* TestTableViewApp */ = {
 			isa = PBXGroup;
 			children = (
-				0E39AFC822491EED00D251A6 /* AppDelegate.swift */,
-				0E39AFCA22491EED00D251A6 /* ViewController.swift */,
-				0E39AFCC22491EED00D251A6 /* Main.storyboard */,
-				0E39AFCF22491EF000D251A6 /* Assets.xcassets */,
-				0E39AFD122491EF000D251A6 /* LaunchScreen.storyboard */,
-				0E39AFD422491EF000D251A6 /* Info.plist */,
+				0E39AFFD224944E300D251A6 /* Views */,
+				0EB8CFDA2252B3E400E081A8 /* View Controllers */,
+				0E39AFF8224927F100D251A6 /* Helpers */,
+				0EB8CFDC2252B42F00E081A8 /* Resources */,
 			);
 			path = TestTableViewApp;
 			sourceTree = "<group>";
@@ -123,6 +141,46 @@
 				0E39AFEA22491EF000D251A6 /* Info.plist */,
 			);
 			path = TestTableViewAppUITests;
+			sourceTree = "<group>";
+		};
+		0E39AFF8224927F100D251A6 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0E39AFF92249282700D251A6 /* TeamList.swift */,
+				0E39AFFB22493AC900D251A6 /* TeamsCell.swift */,
+				0E39B0002249488700D251A6 /* TeamsHeaderView.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		0E39AFFD224944E300D251A6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0E39AFCC22491EED00D251A6 /* Main.storyboard */,
+				0E39AFFE2249450300D251A6 /* TeamsHeaderView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0EB8CFDA2252B3E400E081A8 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0E39AFCA22491EED00D251A6 /* ViewController.swift */,
+				0E39B00422495CCB00D251A6 /* DetailViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		0EB8CFDC2252B42F00E081A8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0E39AFC822491EED00D251A6 /* AppDelegate.swift */,
+				0E39AFD422491EF000D251A6 /* Info.plist */,
+				0E39AFF62249231B00D251A6 /* list.json */,
+				0E39AFCF22491EF000D251A6 /* Assets.xcassets */,
+				0E39AFD122491EF000D251A6 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +289,8 @@
 			files = (
 				0E39AFD322491EF000D251A6 /* LaunchScreen.storyboard in Resources */,
 				0E39AFD022491EF000D251A6 /* Assets.xcassets in Resources */,
+				0E39AFFF2249450300D251A6 /* TeamsHeaderView.xib in Resources */,
+				0E39AFF72249231C00D251A6 /* list.json in Resources */,
 				0E39AFCE22491EED00D251A6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,8 +316,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E39B0012249488700D251A6 /* TeamsHeaderView.swift in Sources */,
+				0E39AFFC22493AC900D251A6 /* TeamsCell.swift in Sources */,
 				0E39AFCB22491EED00D251A6 /* ViewController.swift in Sources */,
+				0E39B00522495CCB00D251A6 /* DetailViewController.swift in Sources */,
 				0E39AFC922491EED00D251A6 /* AppDelegate.swift in Sources */,
+				0E39AFFA2249282700D251A6 /* TeamList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +497,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W6T664YTD8;
 				INFOPLIST_FILE = TestTableViewApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,6 +515,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W6T664YTD8;
 				INFOPLIST_FILE = TestTableViewApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

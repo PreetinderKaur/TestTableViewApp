@@ -7,6 +7,7 @@
 //
 
 import XCTest
+//import OHHTTPStubs
 @testable import TestTableViewApp
 
 class TestTableViewAppTests: XCTestCase {
@@ -19,9 +20,20 @@ class TestTableViewAppTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
+    func testJSONMapping() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+
+        //        if let path = Bundle.main.path(forResource: "list", ofType: "json") {
+//            do {
+//                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+//                let jsonList = try JSONDecoder().decode([TeamList].self, from: data)
+//                XCTAssertEqual([TeamList], [jsonList])
+//
+//            } catch {
+//
+//            }
+
     }
 
     func testPerformanceExample() {
